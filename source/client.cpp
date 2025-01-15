@@ -44,8 +44,8 @@ int main(int argc, char** argv)
 {
     std::string target_address = "localhost:50051";
     GreeterClient client(grpc::CreateChannel(target_address, grpc::InsecureChannelCredentials()));
-
-    std::string user = "world";
+    std::string user;
+    if(argc>1) user = std::string(argv[1]);
     std::cout << "Client received: " << client.SayHello(user) << std::endl;
 
     return 0;
