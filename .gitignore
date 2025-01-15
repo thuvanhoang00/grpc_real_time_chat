@@ -1,0 +1,19 @@
+# Ignore object files and binaries
+*.o
+*.exe
+*.out
+*.a
+*.so
+*.dll
+
+# Ignore temporary files
+*~
+*.tmp
+*.bak
+
+# Ignore IDE/project-specific files
+.vscode/
+.idea/
+
+# Ignore build directories
+/build/
